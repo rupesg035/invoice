@@ -13,7 +13,7 @@ from django.db import models
 
 class Invoice(models.Model):
     uuid = models.IntegerField(unique=True)
-    # invoiceDate = models.DateTimeField()
+    invoiceDate = models.DateTimeField()
     invoiceNumber = models.IntegerField(unique=True)
     customerName = models.CharField(max_length=150)
     billingAddress = models.TextField()
